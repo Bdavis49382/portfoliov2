@@ -2,8 +2,8 @@
     {
 
         "name":"Wordfight",
-        "language":["Javascript", "React"],
-        "libraries":"Google Firebase",
+        "language":["Javascript"],
+        "libraries":"React and Google Firebase",
         "description":"Based on a multiplayer word game, this React app was my way of using firebase and react together to make my first multiplayer experience from different devices",
         "dateStarted":"8/11/22",
         "dateCompleted":"WIP",
@@ -51,7 +51,7 @@
         "name":"TypeFast!",
         "language":["Python"],
         "libraries":"Tkinter",
-        "description":"As a final project in a class about python functions, I made a typing test using python and tkinter.",
+        "description":"As a final project in a class about functions in python, I made a typing test using python and tkinter.",
         "dateStarted":"3/22",
         "dateCompleted":"3/22",
         "links":[],
@@ -86,12 +86,35 @@
 
         "name":"Battleship",
         "language":["C++"],
-        "libraries":"",
+        "libraries":"none",
         "description":"A version of the game battleship using C++ in the terminal. My first time learning to use the language. Created in two weeks.",
-        "dateStarted":"11/22",
-        "dateCompleted":"12/22",
-        "links":[],
-        "forSchool":false,
+        "dateStarted":"10/22",
+        "dateCompleted":"10/22",
+        "links":["https://github.com/Bdavis49382/Battleship"],
+        "forSchool":true,
         "img":"images/battleship.png"
+    },
+    {
+
+        "name":"TicTacToe",
+        "language":["python"],
+        "libraries":"Socket and Threading",
+        "description":"A simple tic-tac-toe game that uses basic networking and threading to play between two computers. Created in two weeks.",
+        "dateStarted":"11/22",
+        "dateCompleted":"11/22",
+        "links":["https://github.com/Bdavis49382/TicTacToe"],
+        "forSchool":true,
+        "img":"images/tictactoe.png"
+    },
+    {
+        "name":"LearnStuff",
+        "language":["Javascript"],
+        "libraries":"React Native and Google Firebase",
+        "description":"A study aid app with an implemented cloud database so that users can create, edit, and study on their own vocab sets.",
+        "dateStarted":"9/22",
+        "dateCompleted":"1/23",
+        "links":["https://github.com/Bdavis49382/LearnStuff","https://expo.dev/accounts/bdavis49382/projects/learnstuffbeta/builds/ae1046dc-d8c4-4a9c-a372-2e3165c4cb4c"],
+        "forSchool":false,
+        "img":"images/LearnStuff.png"
     }
 ]

@@ -15,3 +15,15 @@ body {
 a {
   text-decoration: none;
 }
+.projects {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project p{
+  transition: color 1s;
+  
+}
+.projectImage {
+  transition: opacity 1s;
+  border-radius: 10%;
+}
