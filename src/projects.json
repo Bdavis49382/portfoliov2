@@ -1,0 +1,97 @@
+[
+    {
+
+        "name":"Wordfight",
+        "language":["Javascript", "React"],
+        "libraries":"Google Firebase",
+        "description":"Based on a multiplayer word game, this React app was my way of using firebase and react together to make my first multiplayer experience from different devices",
+        "dateStarted":"8/11/22",
+        "dateCompleted":"WIP",
+        "links":[],
+        "forSchool":false,
+        "img":"images/Wordfight.png"
+    },
+    {
+
+        "name":"Hiking Idaho",
+        "language":["HTML","CSS"],
+        "libraries":"none",
+        "description":"As part of the basic web development class, I made this website to display information about hiking in Idaho",
+        "dateStarted":"6/3/22",
+        "dateCompleted":"7/15/22",
+        "links":["https://github.com/Bdavis49382/WDD-130/tree/master/hiking_adventures","https://bdavis49382.github.io/WDD-130/hiking_adventures"],
+        "forSchool":true,
+        "img":"images/Hiking_Idaho.png"
+    },
+    {
+
+        "name":"Boggle",
+        "language":["Javascript","HTML","CSS","Python"],
+        "libraries":"Dictionary API",
+        "description":"I initially just wanted to see if I could use recursion in Python to find all possible English words on a random boggle board. However, once I accomplished this I decided I might as well transfer to Javascript so I could make a whole web application of the game Boggle. So that's what I did! It turned out to be a great opportunity to practice not just recursion, but also data structures, API's, and CSS",
+        "dateStarted":"5/7/22",
+        "dateCompleted":"6/2/22",
+        "links":["https://github.com/Bdavis49382/Javascript-Games/tree/master/BoggleGame","https://bdavis49382.github.io/Javascript-Games/BoggleGame/"],
+        "forSchool":false,
+        "img":"images/Boggle.png"
+    },
+    {
+        "name":"Saltdew Valley",
+        "language":"Python",
+        "libraries":"RayLib",
+        "description":"A parody of Stardew Valley, but with the imminent threat of a snail always on your tail! I built it on a team of four people as part of a course about coding with classes",
+        "dateStarted":"3/24/22",
+        "dateCompleted":"4/4/22",
+        "links":["https://github.com/Bdavis49382/Saltdew_Valley"],
+        "forSchool":true,
+        "img":"images/Saltdew_Valley.png"
+    },
+    {
+
+        "name":"TypeFast!",
+        "language":["Python"],
+        "libraries":"Tkinter",
+        "description":"As a final project in a class about python functions, I made a typing test using python and tkinter.",
+        "dateStarted":"3/22",
+        "dateCompleted":"3/22",
+        "links":[],
+        "forSchool":true,
+        "img":"images/TypeFast.png"
+    },
+    {
+
+        "name":"Snake",
+        "language":["Java"],
+        "libraries":"Swing",
+        "description":"A reproduction of the game snake to practice developing basic controls and graphics using Java Swing.",
+        "dateStarted":"11/21",
+        "dateCompleted":"11/21",
+        "links":[],
+        "forSchool":false,
+        "img":"images/JavaSnake.png"
+    },
+    {
+
+        "name":"Backgammon",
+        "language":["Java"],
+        "libraries":"Swing",
+        "description":"A reproduction of the board game backgammon to practice developing more complex controls and graphics using Java Swing.",
+        "dateStarted":"11/21",
+        "dateCompleted":"12/21",
+        "links":[],
+        "forSchool":false,
+        "img":"images/Backgammon.png"
+    },
+    {
+
+        "name":"Battleship",
+        "language":["C++"],
+        "libraries":"",
+        "description":"A version of the game battleship using C++ in the terminal. My first time learning to use the language. Created in two weeks.",
+        "dateStarted":"11/22",
+        "dateCompleted":"12/22",
+        "links":[],
+        "forSchool":false,
+        "img":"images/battleship.png"
+    }
+]
