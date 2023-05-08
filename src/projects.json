@@ -1,5 +1,52 @@
 [
     {
+        "name":"LearnStuff",
+        "language":["Javascript"],
+        "libraries":"React Native and Google Firebase",
+        "description":"A study aid app with an implemented cloud database so that users can create, edit, and study on their own vocab sets.",
+        "dateStarted":"9/22",
+        "dateCompleted":"1/23",
+        "links":["https://github.com/Bdavis49382/LearnStuff","https://expo.dev/accounts/bdavis49382/projects/learnstuffbeta/builds/ae1046dc-d8c4-4a9c-a372-2e3165c4cb4c"],
+        "forSchool":false,
+        "img":"images/LearnStuff.png"
+    },
+    {
+
+        "name":"GITC(Guy in the Chair)",
+        "language":["Python"],
+        "libraries":"Socket, Pygame and Threading",
+        "description":"A multiplayer dungeon crawler based on the idea of one player being the \"guy in the chair\" which guides his companion through the monsters and doors to get the end of the dungeon.",
+        "dateStarted":"11/22",
+        "dateCompleted":"12/22",
+        "links":["https://github.com/Bdavis49382/GITC"],
+        "forSchool":false,
+        "img":"images/gitc.png"
+    },
+    {
+
+        "name":"TicTacToe",
+        "language":["Python"],
+        "libraries":"Socket and Threading",
+        "description":"A simple tic-tac-toe game that uses basic networking and threading to play between two computers. Created in two weeks.",
+        "dateStarted":"11/22",
+        "dateCompleted":"11/22",
+        "links":["https://github.com/Bdavis49382/TicTacToe"],
+        "forSchool":true,
+        "img":"images/tictactoe.png"
+    },
+    {
+
+        "name":"Battleship",
+        "language":["C++"],
+        "libraries":"none",
+        "description":"A version of the game battleship using C++ in the terminal. My first time learning to use the language. Created in two weeks.",
+        "dateStarted":"10/22",
+        "dateCompleted":"10/22",
+        "links":["https://github.com/Bdavis49382/Battleship"],
+        "forSchool":true,
+        "img":"images/battleship.png"
+    },
+    {
 
         "name":"Wordfight",
         "language":["Javascript"],
@@ -63,7 +110,7 @@
         "name":"Snake",
         "language":["Java"],
         "libraries":"Swing",
-        "description":"A reproduction of the game snake to practice developing basic controls and graphics using Java Swing.",
+        "description":"A recreation of the game snake to practice developing basic controls and graphics using Java Swing.",
         "dateStarted":"11/21",
         "dateCompleted":"11/21",
         "links":[],
@@ -75,46 +122,11 @@
         "name":"Backgammon",
         "language":["Java"],
         "libraries":"Swing",
-        "description":"A reproduction of the board game backgammon to practice developing more complex controls and graphics using Java Swing.",
+        "description":"A recreation of the board game backgammon to practice developing more complex controls and graphics using Java Swing.",
         "dateStarted":"11/21",
         "dateCompleted":"12/21",
         "links":[],
         "forSchool":false,
         "img":"images/Backgammon.png"
-    },
-    {
-
-        "name":"Battleship",
-        "language":["C++"],
-        "libraries":"none",
-        "description":"A version of the game battleship using C++ in the terminal. My first time learning to use the language. Created in two weeks.",
-        "dateStarted":"10/22",
-        "dateCompleted":"10/22",
-        "links":["https://github.com/Bdavis49382/Battleship"],
-        "forSchool":true,
-        "img":"images/battleship.png"
-    },
-    {
-
-        "name":"TicTacToe",
-        "language":["python"],
-        "libraries":"Socket and Threading",
-        "description":"A simple tic-tac-toe game that uses basic networking and threading to play between two computers. Created in two weeks.",
-        "dateStarted":"11/22",
-        "dateCompleted":"11/22",
-        "links":["https://github.com/Bdavis49382/TicTacToe"],
-        "forSchool":true,
-        "img":"images/tictactoe.png"
-    },
-    {
-        "name":"LearnStuff",
-        "language":["Javascript"],
-        "libraries":"React Native and Google Firebase",
-        "description":"A study aid app with an implemented cloud database so that users can create, edit, and study on their own vocab sets.",
-        "dateStarted":"9/22",
-        "dateCompleted":"1/23",
-        "links":["https://github.com/Bdavis49382/LearnStuff","https://expo.dev/accounts/bdavis49382/projects/learnstuffbeta/builds/ae1046dc-d8c4-4a9c-a372-2e3165c4cb4c"],
-        "forSchool":false,
-        "img":"images/LearnStuff.png"
     }
 ]

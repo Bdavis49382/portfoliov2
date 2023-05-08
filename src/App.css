@@ -27,3 +27,6 @@ a {
   transition: opacity 1s;
   border-radius: 10%;
 }
+.sideBar {
+  transition: background-color .5s;
+}
