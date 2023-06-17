@@ -1,5 +1,16 @@
 [
     {
+        "name":"Farkle",
+        "language":["C++"],
+        "libaries":"none",
+        "description":"A recreation of the dice game Farkle in C++ using the console using OOP principles. The game involves finding combinations of dice to gamble your way to victory!",
+        "dateStarted":"4/23",
+        "dateCompleted":"5/23",
+        "links":["https://github.com/Bdavis49382/Farkle"],
+        "forSchool":true,
+        "img":"images/Farkle.png"
+    },
+    {
         "name":"LearnStuff",
         "language":["Javascript"],
         "libraries":"React Native and Google Firebase",
