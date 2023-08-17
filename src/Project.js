@@ -1,10 +1,19 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { getDownloadURL, ref } from 'firebase/storage';
 const schoolColor = "#C3C4C0";
 const personalColor = "#DB5461";
-function Project({project,view,index}) {
+function Project({project,view,index,storage}) {
     const {name,language,libraries,description,dateStarted,dateCompleted,links,img,forSchool} = project;
+    const [url,setUrl] = useState('');
     const [hover,setHover] = useState(false);
+
+    useEffect(() => {
+        getDownloadURL(ref(storage,img)).then((downloadUrl) => {
+            setUrl(downloadUrl);
+        })
+
+    },[img,storage])
 
     const boxStyles = {
         textAlign:"left",
@@ -25,6 +34,10 @@ function Project({project,view,index}) {
         marginLeft:"7px",
         color:forSchool !== hover?schoolColor:personalColor
     }
+    const getDate = (timeStamp) => {
+        let d = new Date(timeStamp.seconds * 1000)
+        return `${d.toLocaleString('default',{month:'short'})} ${d.getFullYear()}`
+    }
     const imgStyles = {
         maxWidth:"80%",
         float:"right",
@@ -40,13 +53,13 @@ function Project({project,view,index}) {
             <h4 style={{marginLeft:"5px"}}>{name}</h4>
             <p style={{...pStyles,gridRow:"1/2"}}>{`Language: ${language} ${libraries!== 'none' ? 'using '+libraries:''}`}</p>
             <p style={{...pStyles,gridRow:"2/3"}}>{`Description: ${description}`}</p>
-            <p style={{...pStyles,gridRow:"3/4"}}>{`Timeline: ${dateStarted} - ${dateCompleted}`}</p>
+            <p style={{...pStyles,gridRow:"3/4"}}>{`Timeline: ${getDate(dateStarted)} - ${getDate(dateCompleted)}`}</p>
             {links.length!==0?<a href={links[0]} style={pStyles}>Repository</a>:''}
             {links.length>1?<a href={links[1]} style={pStyles}>Website</a>:''}
             
 
 
-            <img style={imgStyles} src={img} alt={name} className='projectImage'/>
+            <img style={imgStyles} src={url} alt={name} className='projectImage'/>
         </div>
     )
 
