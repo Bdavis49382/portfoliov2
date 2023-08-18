@@ -6,14 +6,16 @@ import {getDownloadURL, getStorage, ref} from "firebase/storage";
 const colors = {Personal: "#B3CDD1",School: "#577399",Both:"rgb(219,213,205)"}
 const projectsRef = firebase.firestore().collection("Projects");
 const storage = getStorage();
-const picturesRefs = [ref(storage,'menu.png'),ref(storage,'hero.jpg')];
+const heroRef = ref(storage,'hero.jpg')
+const menuRef = ref(storage,'menu.png')
 
 function App() {
   const [view,setView] = useState('Both');
   const [sortBy,setSortBy] = useState('Date');
   const [sideBarVisible,setSideBarVisible] = useState(false);
   const [projects,setProjects] = useState([]);
-  const [urls,setUrls] = useState([]);
+  const [heroUrl,setHeroUrl] = useState('');
+  const [menuUrl,setMenuUrl] = useState('');
 
 
   useEffect(() => {
@@ -31,13 +33,12 @@ function App() {
         setProjects(projectsD)
       }
     )
-    const urls = []
-    picturesRefs.forEach((pictureRef) => {
-      getDownloadURL(pictureRef).then((downloadUrl) => {
-        urls.push(downloadUrl)
-      })
+    getDownloadURL(heroRef).then((downloadURL) => {
+      setHeroUrl(downloadURL)
     })
-    setUrls(urls);
+    getDownloadURL(menuRef).then((downloadURL) => {
+      setHeroUrl(downloadURL)
+    })
   },[]);
   const headerStyles = {
     backgroundColor: colors['Both'],
@@ -82,13 +83,13 @@ function App() {
       <header style={headerStyles}>
         <h1 style={{gridColumn:"2/3",paddingTop:10}}>Ben Davis</h1>
         <h2 style={{fontStyle:'italic',gridColumn:"2/3",gridRow:"2/3"}}>Project Portfolio</h2>
-          <img src={urls[1]} alt="main" style={{
+          <img src={heroUrl} alt="main" style={{
             gridColumn: "4/5",
             gridRow:"1/4",
             width:"100%"}}/>
 
       <div className='sideBar' style={{gridColumn:"1/2",gridRow:"1/4",backgroundColor:sideBarVisible?"white":"transparent",height:"100%",display:"grid",gridTemplateRows:"1fr 1fr 1fr",alignItems:"center",justifyItems:"center"}}>
-        <button style={menuButtonStyles} onClick={() => setSideBarVisible(!sideBarVisible)}><img src={urls[0]} alt="menu button" style={{maxWidth:40}}></img></button>
+        <button style={menuButtonStyles} onClick={() => setSideBarVisible(!sideBarVisible)}><img src={menuUrl} alt="menu button" style={{maxWidth:40}}></img></button>
         <div className="sideBarContent" style={{visibility:sideBarVisible?"visible":"hidden"}}>
           <span style={{display:"block"}}>Filter By... </span>
           <button 
